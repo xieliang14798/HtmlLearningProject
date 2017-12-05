@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+
+        .box {
+            transition: all 0.5s ease;
+        }
+
+        .box.rotate {
+            transform: rotate(360deg);
+        }
+    </style>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("div").on("click", function () {
+                $(this).toggleClass("rotate");
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <img src="../../images/zhuan.jpg" alt="">
+</div>
+</body>
+</html>
