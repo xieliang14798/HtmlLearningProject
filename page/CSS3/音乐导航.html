@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐导航</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 900px;
+            height: 45px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+        }
+
+        .box ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .box li {
+            flex: 1;
+            border-right: 1px dashed #ccc;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+            line-height: 45px;
+            overflow: hidden;
+        }
+
+        .box li:last-child {
+            border-right-color: transparent;
+        }
+
+        .box li ins {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: all 0.2s linear;
+        }
+
+        .box li ins.played {
+            transform: translateY(-45px);
+        }
+
+    </style>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        var arr = ["blue", "green", "yellow", "pink", "deeppink", "orange", "purple"];
+        $(function () {
+            $(".box li").append("<ins></ins>");
+            $.each($(".box ins"), function (index, ele) {
+                $(ele).css("background-color", arr[index]);
+                $(ele).css("border-right", "1px solid " + arr[index]);
+                var music = $("<audio src='../../assets/music/" + (index + 1) + ".mp3'></audio>");
+                $(ele).parent().append(music);
+            })
+            $(".box").on("mouseenter", "li", function () {
+                $(this).children("ins").addClass("played");
+                var player = $(this).children("audio").get(0);
+                player.load();
+                player.play();
+            }).on("mouseout", "li", function () {
+                $(this).children("ins").removeClass("played");
+            })
+            $(window).keydown(function (event) {
+                var num = 0;
+                if (event.keyCode >= 49 && event.keyCode <= 56) {
+                    num = event.keyCode - 49;
+                    $(".box li").eq(num).trigger("mouseenter");
+                    setTimeout(function () {
+                        $(".box li").eq(num).trigger("mouseout");
+                    }, 300);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li>邓紫棋</li>
+        <li>邓紫棋</li>
+        <li>邓紫棋</li>
+        <li>邓紫棋</li>
+        <li>邓紫棋</li>
+        <li>邓紫棋</li>
+        <li>邓紫棋</li>
+    </ul>
+</div>
+</body>
+</html>

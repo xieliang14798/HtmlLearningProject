@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21727f13-209d-4e5d-874d-f60596bb9e51" name="Default" comment="" />
+    <list default="true" id="21727f13-209d-4e5d-874d-f60596bb9e51" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/music/1.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/music/2.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/music/3.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/music/4.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/music/5.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/music/6.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/music/7.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/CSS3/音乐导航.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +20,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="音乐导航.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/CSS3/音乐导航.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1435">
+              <caret line="98" column="7" lean-forward="true" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,6 +46,13 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/page/CSS3/音乐导航.html" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -57,6 +92,17 @@
               <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -68,6 +114,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WebProject\HtmlLearningProject\assets\music" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -167,6 +219,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="21727f13-209d-4e5d-874d-f60596bb9e51" name="Default" comment="" />
@@ -174,12 +229,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512444917317</updated>
-      <workItem from="1512444919848" duration="33000" />
+      <workItem from="1512444919848" duration="7964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33000" />
+    <option name="totallyTimeSpent" value="7964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -231,6 +286,14 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/CSS3/音乐导航.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1435">
+          <caret line="98" column="7" lean-forward="true" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
