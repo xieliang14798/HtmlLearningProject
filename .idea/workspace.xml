@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21727f13-209d-4e5d-874d-f60596bb9e51" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/paopao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zhuan.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/旋转.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/气泡.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/00.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/00.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/9.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pk1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pk2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/3D.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/图库(鼠标进入方向判断).html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/扑克牌旋转.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/CSS3/音乐导航.html" afterPath="$PROJECT_DIR$/page/css3/音乐导航.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/css3/音乐导航.html" afterPath="$PROJECT_DIR$/page/css3/音乐导航.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,33 +31,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="HtmlLearningProject" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="音乐导航.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/css3/音乐导航.html">
+      <file leaf-file-name="扑克牌旋转.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/css3/扑克牌旋转.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="65" column="59" lean-forward="true" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="气泡.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/css3/气泡.html">
+      <file leaf-file-name="3D.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/css3/3D.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="旋转.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page/css3/旋转.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="432">
+              <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -71,6 +79,10 @@
         <option value="$PROJECT_DIR$/page/CSS3/音乐导航.html" />
         <option value="$PROJECT_DIR$/page/css3/气泡.html" />
         <option value="$PROJECT_DIR$/page/css3/旋转.html" />
+        <option value="$PROJECT_DIR$/page/css3/音乐导航.html" />
+        <option value="$PROJECT_DIR$/page/css3/图库(鼠标进入方向判断).html" />
+        <option value="$PROJECT_DIR$/page/css3/扑克牌旋转.html" />
+        <option value="$PROJECT_DIR$/page/css3/3D.html" />
       </list>
     </option>
   </component>
@@ -119,6 +131,11 @@
             <path>
               <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -143,6 +160,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\WebProject\HtmlLearningProject\images" />
+      <recent name="F:\WebProject\HtmlLearningProject\images\dzq" />
       <recent name="F:\WebProject\HtmlLearningProject\assets\music" />
     </key>
   </component>
@@ -260,12 +278,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512444917317</updated>
-      <workItem from="1512444919848" duration="10627000" />
+      <workItem from="1512444919848" duration="20879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10627000" />
+    <option name="totallyTimeSpent" value="20879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -276,20 +294,20 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5065789" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -321,14 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/css3/音乐导航.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="65" column="59" lean-forward="true" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/css3/气泡.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -339,8 +349,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/css3/旋转.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/css3/音乐导航.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="81" column="14" lean-forward="true" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/dzq/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="473" column="0" lean-forward="false" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/css3/图库(鼠标进入方向判断).html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/css3/扑克牌旋转.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/css3/3D.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图库(鼠标进入方向判断)</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1020px;
+            margin: 50px auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .list {
+            border-radius: 15px;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .list div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-100deg);
+            transform-origin: top left;
+            transition: transform 0.8s;
+        }
+
+        .current div {
+            transform: rotate(0);
+        }
+
+        .list div.top {
+            transform-origin: top left;
+        }
+
+        .list div.right {
+            transform-origin: top right;
+        }
+
+        .list div.left {
+            transform-origin: bottom left;
+        }
+
+        .list div.bottom {
+            transform-origin: bottom right;
+        }
+    </style>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script type="application/javascript">
+        $(function () {
+            $(".box").on("mouseenter mouseleave", ".list", function (e) {
+                var target = $(this);  // 先把当前元素存起来
+                var w = target.width(); // 得到盒子宽度
+                var h = target.height();// 得到盒子高度
+                var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+                // 获取x值
+                var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+                // 获取y值
+                var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4; //direction的值为“0,1,2,3”分别对应着“上，右，下，左”
+                if (e.type == "mouseenter") {
+                    switch (direction) {
+                        case 0:
+                            goin("top");
+                            break;
+                        case 1:
+                            goin("right");
+                            break;
+                        case 2:
+                            goin("bottom");
+                            break;
+                        case 3:
+                            goin("left");
+                            break;
+                    }
+                } else {
+                    switch (direction) {
+                        case 0:
+                            goout("top");
+                            break;
+                        case 1:
+                            goout("right");
+                            break;
+                        case 2:
+                            goout("bottom");
+                            break;
+                        case 3:
+                            goout("left");
+                            break;
+                    }
+                }
+
+                function goin(str) {
+                    target.addClass("current");
+                    target.children("div").removeClass().addClass(str);
+                }
+
+                function goout(str) {
+                    target.removeClass("current");
+                    target.children("div").removeClass().addClass(str);
+                }
+
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/1.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/2.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/3.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/4.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/5.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/6.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/7.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/8.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <img src="../../images/dzq/00.jpg" alt=""/>
+        <div>
+            <img src="../../images/dzq/9.jpg" alt=""/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
