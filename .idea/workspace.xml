@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21727f13-209d-4e5d-874d-f60596bb9e51" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/00.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/9.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dzq/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pk1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pk2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/3D.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/图库(鼠标进入方向判断).html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/扑克牌旋转.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/css3/翻转导航栏.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/css3/音乐导航.html" afterPath="$PROJECT_DIR$/page/css3/音乐导航.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,11 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3D.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="3D.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/css3/3D.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+            <state relative-caret-position="324">
+              <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="翻转导航栏.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/css3/翻转导航栏.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -83,6 +74,8 @@
         <option value="$PROJECT_DIR$/page/css3/图库(鼠标进入方向判断).html" />
         <option value="$PROJECT_DIR$/page/css3/扑克牌旋转.html" />
         <option value="$PROJECT_DIR$/page/css3/3D.html" />
+        <option value="$PROJECT_DIR$/page/css3/翻转导航栏2.html" />
+        <option value="$PROJECT_DIR$/page/css3/翻转导航栏.html" />
       </list>
     </option>
   </component>
@@ -127,11 +120,6 @@
               <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
@@ -278,12 +266,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512444917317</updated>
-      <workItem from="1512444919848" duration="20879000" />
+      <workItem from="1512444919848" duration="30911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20879000" />
+    <option name="totallyTimeSpent" value="30911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -394,8 +382,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/css3/3D.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+        <state relative-caret-position="324">
+          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/css3/翻转导航栏2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/css3/翻转导航栏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
           <folding />
         </state>
       </provider>
