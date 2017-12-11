@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D轮播图</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 150px auto;
+            position: relative;
+        }
+
+        ul {
+            width: 200px;
+            height: 200px;
+            list-style: none;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            transform: scaleX(2.5) scaleY(1.5) rotateX(0);
+        }
+
+        ul li {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        li:nth-child(1) {
+            background: url(../../images/轮播图/1.jpg) no-repeat;
+            transform: rotateX(0) translateZ(100px);
+        }
+
+        li:nth-child(2) {
+            background: url(../../images/轮播图/2.jpg) no-repeat;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        li:nth-child(3) {
+            background: url(../../images/轮播图/3.jpg) no-repeat;
+            transform: rotateX(-180deg) translateZ(100px);
+        }
+
+        li:nth-child(4) {
+            background: url(../../images/轮播图/4.jpg) no-repeat;
+            transform: rotateX(-270deg) translateZ(100px);
+        }
+
+        li:nth-child(5) {
+            background: blue;
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        li:nth-child(6) {
+            background: purple;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        /*ul:hover {*/
+        /*transform: scaleX(2.5) scaleY(1.5) rotateX(360deg);*/
+        /*}*/
+
+        span {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            background: rgba(0, 0, 0, 0);
+            display: flex;
+            align-items: center;
+        }
+
+        span:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        span.prev {
+            left: -140px;
+        }
+
+        span.prev i {
+            width: 20px;
+            height: 20px;
+            display: block;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(-135deg);
+            margin-left: 20px;
+        }
+
+        span.next {
+            right: -140px;
+        }
+
+        span.next i {
+            width: 20px;
+            height: 20px;
+            display: block;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(45deg);
+            margin-left: 10px;
+        }
+    </style>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script type="application/javascript">
+        $(function () {
+            var num = 0;
+            $(".next").on("click", function () {
+                num++;
+                $("ul").css("transform", "scaleX(2.5) scaleY(1.5) rotateX(" + num * 90 + "deg)")
+            })
+            $(".prev").on("click", function () {
+                num--;
+                $("ul").css("transform", "scaleX(2.5) scaleY(1.5) rotateX(" + num * 90 + "deg)")
+            })
+
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <span class="next"><i></i></span>
+    <span class="prev"><i></i></span>
+</div>
+
+</body>
+</html>

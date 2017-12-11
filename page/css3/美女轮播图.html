@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box {
+            width: 600px;
+            height: 375px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .prev, .next {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            text-decoration: none;
+            color: white;
+            font: 400 20px/60px "宋体";
+            text-align: center;
+        }
+
+        .prev:hover, .next:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .info {
+            display: block;
+            color: white;
+            width: 60px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.4);
+            font: 400 14px/30px "微软雅黑";
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            margin-left: -30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .box li {
+            width: 120px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+        }
+
+        li div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        li div:nth-child(1) {
+            transform: rotateX(0deg) translateZ(187px);
+        }
+
+        li div:nth-child(2) {
+            transform: rotateX(-90deg) translateZ(187px);
+        }
+
+        li div:nth-child(3) {
+            transform: rotateX(-180deg) translateZ(187px);
+        }
+
+        li div:nth-child(4) {
+            transform: rotateX(-270deg) translateZ(187px);
+        }
+
+    </style>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var data = ["白冰", "陈乔恩", "郑爽", "唐嫣"];
+            $(".info").text(data[0]);
+            $.each($("li"), function (index) {
+                $(this).css({
+                    "left": index * 120,
+                    "transition-delay": index * 0.2 + "s"
+                })
+                var divs = $(this).find("div");
+                divs.css("background-position", -120 * index + "px");
+                $.each(divs, function (index) {
+                    $(this).css("background-image", "url(../../images/美女/" + data[index] + ".jpg)");
+                })
+            })
+            var num = 0;
+            $(".prev").on("click", function () {
+                num--;
+                setTimeout(function () {
+                    $(".info").text(data[Math.abs(num % 4)]);
+                }, 1200);
+                $("li").css("transform", "rotateX(" + num * 90 + "deg)");
+            })
+            $(".next").on("click", function () {
+                num++;
+                setTimeout(function () {
+                    $(".info").text(data[Math.abs(num % 4)]);
+                }, 1200);
+                $("li").css("transform", "rotateX(" + num * 90 + "deg)");
+            })
+
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </li>
+        <li>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </li>
+    </ul>
+    <a href="javascript:void(0);" class="prev">&lt</a>
+    <a href="javascript:void(0);" class="next">&gt</a>
+    <p class="info"></p>
+</div>
+
+</body>
+</html>
