@@ -1,10 +1,10 @@
 <?php
-$username = $_GET['username'];
-$password = $_GET['password'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 if ($username == 'admin' && $password == '123') {
-    echo 1;
+    echo '{"code":1,"message":"(账号：' . $username . '，密码：' . $password . ')"}';
 } else {
-    echo 2;
+    echo '{"code":2,"message":"(账号：' . $username . '，密码：' . $password . ')"}';
 }
 ?>
 
