@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ems</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfix:before, .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1; /*IE/7/6*/
+        }
+
+        body {
+            display: flex;
+            background: url(../../images/美女/白冰.jpg);
+            background-size: 42%;
+        }
+
+        .box {
+            margin: 100px auto 0;
+        }
+
+        input {
+            float: left;
+            outline-style: none;
+            width: 540px;
+            height: 60px;
+            padding: 0 20px;
+            font: 400 20px/60px "宋体";
+            color: #ccc;
+            background: #fff;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .login {
+            float: left;
+            width: 120px;
+            height: 60px;
+            font: 400 18px/60px "宋体";
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            background: #ffbf00;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .login:hover {
+            background: #ffd657;
+        }
+
+        #list {
+            margin-top: 20px;
+        }
+
+        #list li {
+            display: block;
+            width: 660px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+
+        }
+
+        #list li span {
+            float: left;
+            color: black;
+            font-size: 16px;
+        }
+
+        #list .date {
+            text-align: center;
+            width: 120px;
+        }
+
+        #list .desc {
+            width: 540px;
+        }
+    </style>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        var text = "输入单号，在800+快递公司中为您智能查询";
+        $(function () {
+            $("#code").on("focus", function () {
+                $(this).css({
+                    "border-color": "orange",
+                    "color": "black"
+                });
+                if ($(this).val() == text) $(this).val("");
+            }).on("blur", function () {
+                $(this).css({
+                    "border-color": "transparent",
+                    "color": "#ccc"
+                });
+                if (!$(this).val()) $(this).val(text);
+            })
+            $(".login").on("click", function () {
+                var code = $("#code").val();
+                if (code == "" || code == text) {
+                    alert("请输入快递单号！");
+                    return
+                }
+                var xhr = null;
+                try {
+                    xhr = new XMLHttpRequest();
+                } catch (e) {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xhr.open("post", "server/ems.php", true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                var params = 'code=' + code;
+                xhr.send(params);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+                        if (xhr.status == 200) {
+                            var data = JSON.parse(xhr.responseText);
+                            console.log(data);
+                            if (data.status == -2) {
+                                alert(data.msg);
+                            } else {
+                                var list = $("#list");
+                                list.empty();
+                                $.each(data.data, function (index, obj) {
+                                    var li = $("<li style='overflow: hidden'></li>");
+                                    var time = $('<span class="date">' + obj.time + '</span>');
+                                    var context = $('<span class="desc">' + obj.context + '</span>')
+                                    li.append(time).append(context);
+                                    setTimeout(function () {
+                                        list.append(li);
+                                        li.stop().fadeIn(400);
+                                    }, 400 * index)
+                                })
+                            }
+                        }
+                    }
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="clearfix">
+        <input type="text" id="code" value="输入单号，在800+快递公司中为您智能查询">
+        <div class="login">查&nbsp;&nbsp;询</div>
+    </div>
+    <ul id="list">
+    </ul>
+</div>
+
+</body>
+</html>
