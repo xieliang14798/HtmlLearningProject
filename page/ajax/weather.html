@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            background: url(../../images/美女/白冰.jpg);
+            background-size: 42%;
+        }
+
+        .box {
+            margin: 40px auto 0;
+        }
+
+        #city {
+            display: block;
+            width: 400px;
+            height: 40px;
+            font: 400 16px/40px "微软雅黑";
+            outline-style: none;
+            border: none;
+            border-radius: 4px;
+            padding-left: 10px;
+        }
+
+        .weather {
+            width: 100%;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+            border-radius: 4px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            overflow: scroll;
+        }
+
+        .item {
+            font: 400 17px/30px "微软雅黑";
+            color: black;
+            border-bottom: 1px solid black;
+            padding: 10px 0;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .item ul {
+            list-style: none;
+        }
+
+        .item li {
+            text-indent: 3em;
+
+        }
+    </style>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#city").on("change", function () {
+                var value = $(this).val();
+                $.ajax({
+                    type: 'get',
+                    dataType: 'jsonp',
+                    url: 'http://cdn.weather.hao.360.cn/api_weather_info.php?app=hao360&code=' + value,
+                    jsonp: '_jsonp',
+                    success: function (data) {
+                        var weather = data.weather;
+                        console.log(weather);
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <select id="city">
+        <option value="101010100">北京</option>
+        <option value="101020100">上海</option>
+        <option value="101280101">广州</option>
+        <option value="101280601">深圳</option>
+    </select>
+    <div class="weather">
+        <div class="item">日期：2017-12-21
+            <ul class="day">
+                <li>白天天气：晴</li>
+                <li>白天温度：8</li>
+                <li>白天风向：西南风</li>
+                <li>白天风速：微风</li>
+            </ul>
+            <ul class="night">
+                <li>夜间天气：晴</li>
+                <li>夜间温度：8</li>
+                <li>夜间风向：西南风</li>
+                <li>夜间风速：微风</li>
+            </ul>
+        </div>
+        <div class="item">日期：2017-12-21
+            <ul class="day">
+                <li>白天天气：晴</li>
+                <li>白天温度：8</li>
+                <li>白天风向：西南风</li>
+                <li>白天风速：微风</li>
+            </ul>
+            <ul class="night">
+                <li>夜间天气：晴</li>
+                <li>夜间温度：8</li>
+                <li>夜间风向：西南风</li>
+                <li>夜间风速：微风</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
