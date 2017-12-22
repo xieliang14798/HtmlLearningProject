@@ -5,14 +5,10 @@
     <list default="true" id="21727f13-209d-4e5d-874d-f60596bb9e51" name="Default" comment="" />
 =======
     <list default="true" id="21727f13-209d-4e5d-874d-f60596bb9e51" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/ajax/ems.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/ajax/ems_jquery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/ajax/jsonp2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/ajax/jsonp_原生.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/ajax/server/ems.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/ajax/server/jsonp_native.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template-web.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/ajax/jsonp百度接口(使用模板).html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/ajax/weather.html" afterPath="$PROJECT_DIR$/page/ajax/weather.html" />
     </list>
 >>>>>>> 2b4e569bea3479f53381060542d69038f5f7a5d5
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,6 +22,7 @@
     <favorites_list name="HtmlLearningProject" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -169,6 +166,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> 69d3addc1d9f31d560630381da1a428cb180d856
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -218,7 +218,13 @@
         <option value="$PROJECT_DIR$/page/ajax/jsonp_原生.html" />
         <option value="$PROJECT_DIR$/page/ajax/jsonp.html" />
         <option value="$PROJECT_DIR$/page/ajax/jsonp2.html" />
+<<<<<<< HEAD
 >>>>>>> c9d96e88688af23e6f84d20fd20835f130f7dcc2
+=======
+        <option value="$PROJECT_DIR$/page/ajax/weather.html" />
+        <option value="$PROJECT_DIR$/page/ajax/jsonp百度接口.html" />
+        <option value="$PROJECT_DIR$/page/ajax/jsonp百度接口(使用模板).html" />
+>>>>>>> 69d3addc1d9f31d560630381da1a428cb180d856
       </list>
     </option>
   </component>
@@ -296,18 +302,6 @@
               <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HtmlLearningProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HtmlLearningProject" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="css3" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -331,10 +325,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\WebProject\HtmlLearningProject\page\ajax" />
+      <recent name="F:\WebProject\HtmlLearningProject\js" />
       <recent name="F:\WebProject\HtmlLearningProject\page\ajax\server" />
       <recent name="F:\WebProject\HtmlLearningProject\images\loveyout" />
       <recent name="F:\WebProject\HtmlLearningProject\assets\music" />
-      <recent name="F:\WebProject\HtmlLearningProject\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -465,12 +459,17 @@
       <workItem from="1513220454092" duration="7838000" />
       <workItem from="1513235218258" duration="874000" />
       <workItem from="1513236209226" duration="15751000" />
+<<<<<<< HEAD
       <workItem from="1513561724517" duration="27706000" />
 >>>>>>> c9d96e88688af23e6f84d20fd20835f130f7dcc2
+=======
+      <workItem from="1513561724517" duration="59423000" />
+>>>>>>> 69d3addc1d9f31d560630381da1a428cb180d856
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="12845000" />
@@ -483,6 +482,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="158899000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+>>>>>>> 69d3addc1d9f31d560630381da1a428cb180d856
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -524,7 +529,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414523" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414523" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -597,6 +602,7 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/page/css3/音乐导航.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -647,6 +653,8 @@
         <state relative-caret-position="1755">
           <caret line="65" column="59" lean-forward="true" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
 =======
+=======
+>>>>>>> 69d3addc1d9f31d560630381da1a428cb180d856
     <entry file="file://$PROJECT_DIR$/page/ajax/server/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -952,16 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/ajax/ems.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="133" column="36" lean-forward="true" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
-          <folding>
-            <marker date="1513582053637" expanded="true" signature="3884:3900" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/ajax/server/jsonp_native.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -970,34 +968,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/ajax/jsonp_原生.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/ajax/jsonp_jquery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page/ajax/ems_jquery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="118" column="26" lean-forward="true" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+        <state relative-caret-position="-279">
+          <caret line="130" column="71" lean-forward="false" selection-start-line="130" selection-start-column="71" selection-end-line="130" selection-end-column="71" />
           <folding>
             <marker date="1513653007944" expanded="true" signature="3374:3390" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/ajax/jsonp_原生.html">
+    <entry file="file://$PROJECT_DIR$/page/ajax/ems.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <marker date="1513582053637" expanded="true" signature="3884:3900" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/ajax/jsonp百度接口.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/ajax/jsonp.html">
+    <entry file="file://$PROJECT_DIR$/page/ajax/weather.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        <state relative-caret-position="1809">
+          <caret line="139" column="7" lean-forward="false" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/ajax/jsonp2.html">
+    <entry file="file://$PROJECT_DIR$/js/template-web.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="2" column="5213" lean-forward="false" selection-start-line="2" selection-start-column="5213" selection-end-line="2" selection-end-column="5213" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/ajax/jsonp百度接口(使用模板).html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="432">
 <<<<<<< HEAD
           <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
@@ -1005,6 +1038,10 @@
 =======
           <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
 >>>>>>> c9d96e88688af23e6f84d20fd20835f130f7dcc2
+=======
+        <state relative-caret-position="459">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+>>>>>>> 69d3addc1d9f31d560630381da1a428cb180d856
           <folding />
         </state>
       </provider>
