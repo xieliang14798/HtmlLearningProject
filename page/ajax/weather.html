@@ -62,9 +62,50 @@
         }
     </style>
     <script src="../../js/jquery-3.2.1.js"></script>
+    <script src="../../js/template-web.js"></script>
+    <!--简洁写法-->
+    <script type="text/html" id="test">
+        {{each weather}}
+        <div class="item">日期：{{$value.date}}
+            <ul class="day">
+                <li>白天天气：{{$value.info.day[1]}}</li>
+                <li>白天温度：{{$value.info.day[2]}}</li>
+                <li>白天风向：{{$value.info.day[3]}}</li>
+                <li>白天风速：{{$value.info.day[4]}}</li>
+            </ul>
+            <ul class="night">
+                <li>夜间天气：{{$value.info.night[1]}}</li>
+                <li>夜间温度：{{$value.info.night[2]}}</li>
+                <li>夜间风向：{{$value.info.night[3]}}</li>
+                <li>夜间风速：{{$value.info.night[4]}}</li>
+            </ul>
+        </div>
+        {{/each}}
+    </script>
+    <!--原生写法-->
+    <script type="text/html" id="list">
+        <% for (var i = 0; i < weather.length; i ++) { %>
+        <div class="item">日期：<%=weather[i].date%>
+            <ul class="day">
+                <li>白天天气：<%=weather[i].info.day[1]%></li>
+                <li>白天温度：<%=weather[i].info.day[2]%></li>
+                <li>白天风向：<%=weather[i].info.day[3]%></li>
+                <li>白天风速：<%=weather[i].info.day[4]%></li>
+            </ul>
+            <ul class="night">
+                <li>夜间天气：<%=weather[i].info.night[1]%></li>
+                <li>夜间温度：<%=weather[i].info.night[2]%></li>
+                <li>夜间风向：<%=weather[i].info.night[3]%></li>
+                <li>夜间风速：<%=weather[i].info.night[4]%></li>
+            </ul>
+        </div>
+        <% } %>
+    </script>
     <script type="text/javascript">
         $(function () {
-            $("#city").on("change", function () {
+            var city = $("#city");
+            var weather = $(".weather");
+            city.on("change", function () {
                 var value = $(this).val();
                 $.ajax({
                     type: 'get',
@@ -72,15 +113,15 @@
                     url: 'http://cdn.weather.hao.360.cn/api_weather_info.php?app=hao360&code=' + value,
                     jsonp: '_jsonp',
                     success: function (data) {
-                        var weather = data.weather;
-                        console.log(weather);
+//                        weather.html(template('test', data));
+                        weather.html(template('list', data));
                     },
                     error: function (e) {
                         console.log(e);
                     }
-
                 });
             })
+            city.triggerHandler("change");
         })
     </script>
 </head>
@@ -92,36 +133,7 @@
         <option value="101280101">广州</option>
         <option value="101280601">深圳</option>
     </select>
-    <div class="weather">
-        <div class="item">日期：2017-12-21
-            <ul class="day">
-                <li>白天天气：晴</li>
-                <li>白天温度：8</li>
-                <li>白天风向：西南风</li>
-                <li>白天风速：微风</li>
-            </ul>
-            <ul class="night">
-                <li>夜间天气：晴</li>
-                <li>夜间温度：8</li>
-                <li>夜间风向：西南风</li>
-                <li>夜间风速：微风</li>
-            </ul>
-        </div>
-        <div class="item">日期：2017-12-21
-            <ul class="day">
-                <li>白天天气：晴</li>
-                <li>白天温度：8</li>
-                <li>白天风向：西南风</li>
-                <li>白天风速：微风</li>
-            </ul>
-            <ul class="night">
-                <li>夜间天气：晴</li>
-                <li>夜间温度：8</li>
-                <li>夜间风向：西南风</li>
-                <li>夜间风速：微风</li>
-            </ul>
-        </div>
-    </div>
+    <div class="weather"></div>
 </div>
 
 </body>
