@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsonp_原生</title>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        function callback(data) {
+            alert(JSON.stringify(data));
+            alert(data.name);
+        }
+    </script>
+    <script src="server/jsonp_native.php?method=callback"></script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -2,8 +2,11 @@
   <dictionary name="Administrator">
     <words>
       <w>deeppink</w>
+      <w>jsonp</w>
       <w>mouseenter</w>
       <w>mouseout</w>
+      <w>onreadystatechange</w>
+      <w>xmlhttp</w>
     </words>
   </dictionary>
 </component>
