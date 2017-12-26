@@ -6,6 +6,7 @@
       <w>mouseenter</w>
       <w>mouseout</w>
       <w>onreadystatechange</w>
+      <w>topbar</w>
       <w>xmlhttp</w>
     </words>
   </dictionary>

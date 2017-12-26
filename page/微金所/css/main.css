@@ -1,0 +1,26 @@
+#header {
+    height: 200px;
+}
+
+#header > .topbar {
+    height: 40px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#header > .topbar .row div {
+    background: yellow;
+    height: 40px;
+}
+
+#header > .topbar .row div:nth-child(2n) {
+    background: green;
+}
+
+section {
+    height: 200px;
+    background: white;
+}
+
+section:nth-of-type(2n+1) {
+    background: yellowgreen;
+}
