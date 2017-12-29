@@ -2,9 +2,13 @@
   <dictionary name="Administrator">
     <words>
       <w>deeppink</w>
+      <w>glyphicon</w>
+      <w>itcast</w>
       <w>jsonp</w>
+      <w>mobilephone</w>
       <w>mouseenter</w>
       <w>mouseout</w>
+      <w>navbar</w>
       <w>onreadystatechange</w>
       <w>topbar</w>
       <w>xmlhttp</w>
