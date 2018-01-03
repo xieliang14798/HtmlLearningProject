@@ -51,6 +51,7 @@ fieldset[disabled] .btn-itcast.active {
 .navbar-itcast {
     background-color: #fff;
     border-color: #f5f5f5;
+    margin-bottom: 0;
 }
 
 .navbar-itcast .navbar-brand {
@@ -214,9 +215,41 @@ body {
     content: "\e920";
 }
 
+.icon-uniE907:before {
+    content: "\e907";
+}
+
+.icon-uniE903:before {
+    content: "\e903";
+}
+
+.icon-uniE901:before {
+    content: "\e901";
+}
+
+.icon-uniE900:before {
+    content: "\e900";
+}
+
+.icon-uniE904:before {
+    content: "\e904";
+}
+
+.icon-uniE902:before {
+    content: "\e902";
+}
+
+.icon-uniE906:before {
+    content: "\e906";
+}
+
+.icon-uniE905:before {
+    content: "\e905";
+}
+
 /*头部区域*/
 #header {
-    height: 200px;
+    /*height: 200px;*/
 }
 
 #header > .topbar {
@@ -277,11 +310,117 @@ body {
     vertical-align: middle;
 }
 
-section {
-    height: 200px;
-    background: white;
+/*头部区域*/
+
+/*轮播图*/
+#main_ad {
+
 }
 
-section:nth-of-type(2n+1) {
-    background: yellowgreen;
+#main_ad > .carousel-inner > .item {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
+
+#main_ad > .carousel-inner > .item > img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #main_ad > .carousel-inner > .item {
+        height: 410px;
+    }
+}
+
+/*轮播图*/
+/*网站特色*/
+#features {
+    padding: 50px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#features i {
+    font-size: 34px;
+}
+
+#features a {
+    text-decoration: none;
+    color: #333;
+}
+
+#features a:hover {
+    color: #E9232C;
+}
+
+#features > .container > .row > div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*网站特色*/
+/*立即预约*/
+#booking {
+    padding: 20px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#booking > .container > p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#booking > .container > .pull-left > span {
+    color: #e92322;
+}
+
+#booking > .container > .pull-left > a {
+    color: #e92322;
+    text-decoration: none;
+    border-bottom: 1px dashed #e92322;
+}
+
+#booking > .container > .pull-right > a {
+    color: #333;
+    text-decoration: none;
+}
+
+#booking > .container > .pull-right > a:hover {
+    color: #e92322;
+}
+
+/*立即预约*/
+/*产品推荐*/
+#products {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+#products .nav-tabs {
+    border-bottom: 1px solid #c0c0c0;
+    padding-left: 20px;
+}
+
+#products > .container > .nav-tabs > li > a {
+    color: #444;
+    font-size: 16px;
+}
+
+#products > .container > .nav-tabs > li > a:hover,
+#products > .container > .nav-tabs > li > a:focus {
+    background-color: transparent;
+    border-color: transparent;
+    color: #000;
+}
+
+#products > .container > .nav-tabs > li.active > a {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 4px solid #e92322;
+}
+
+#products > .container > .tab-content {
+    padding: 20px 0;
+}
+
+/*产品推荐*/
