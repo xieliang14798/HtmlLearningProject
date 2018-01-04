@@ -1,7 +1,55 @@
 /**
  * Bootstrap扩展
  */
-
+.panel-product {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 1px 1px 5px #ccc;
+}
+.panel-product.active {
+    background-color: #e92322;
+    color: #fff;
+}
+.panel-product > .panel-heading {
+    float: right;
+    width: 120px;
+    padding: 0;
+    height: 150px;
+    border-left: 1px dashed #c0c0c0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-product > .panel-heading::before,
+.panel-product > .panel-heading::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    position: absolute;
+}
+.panel-product > .panel-heading::before {
+    top: -8px;
+    left: -8px;
+}
+.panel-product > .panel-heading::after {
+    bottom: -8px;
+    left: -8px;
+}
+.panel-product .panel-heading strong {
+    font-size: 36px;
+}
+.panel-product > .panel-body {
+    margin-right: 120px;
+    height: 150px;
+}
+.panel-product .panel-body h5 {
+    font-size: 16px;
+    margin-top: 0;
+}
 .btn-itcast {
     color: #ffffff;
     background-color: #E92322;
