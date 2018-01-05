@@ -33,9 +33,7 @@
 .panel-product .panel-heading .tooltips{
     position: absolute;
     top: 15px;
-    width: 46px;
-    left: 50%;
-    margin-left: -23px;
+    width: 100%;
 }
 .panel-product.active .panel-heading .tooltips{
     display: none;
@@ -55,11 +53,16 @@
 .panel-product .panel-heading .tooltips span.primary {
     border-color: #e9232c;
     color: #e9232c;
-    margin-right: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
 }
 .panel-product .panel-heading .tooltips span.secondary {
     border-color: #399;
     color: #399;
+    position: absolute;
+    left: 50%;
+    margin-left: 5px;
 }
 .panel-product > .panel-heading::before,
 .panel-product > .panel-heading::after {

@@ -1,5 +1,7 @@
 'use strict';
 $(function () {
+// 初始化tooltips插件
+    $('[data-toggle="tooltip"]').tooltip();
     function resize() {
         var windowWidth = $(window).width();
         var isSmallScreen = windowWidth < 768;
