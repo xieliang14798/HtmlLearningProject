@@ -2,6 +2,7 @@
 $(function () {
 // 初始化tooltips插件
     $('[data-toggle="tooltip"]').tooltip();
+
     function resize() {
         var windowWidth = $(window).width();
         var isSmallScreen = windowWidth < 768;
@@ -16,5 +17,15 @@ $(function () {
             }
         })
     }
+
     $(window).on("resize", resize).trigger("resize");
+    var $navTabs = $(".nav-tabs");
+    var width = 30;
+    $navTabs.find("li").each(function (index, element) {
+        width += element.clientWidth;
+    })
+    // 判断当前UL的宽度是否超出屏幕，如果超出就显示横向滚动条
+    if (width > $(window).width()) {
+        $navTabs.css("width", width).parent().css("overflow-x", "scroll");
+    }
 });
