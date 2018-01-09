@@ -28,4 +28,10 @@ $(function () {
     if (width > $(window).width()) {
         $navTabs.css("width", width).parent().css("overflow-x", "scroll");
     }
+    var $newsTitle = $(".news-title");
+    //新闻tab点击事件
+    $(".news-nav").on("click", "li>a", function () {
+        var $this = $(this);
+        $newsTitle.text($this.data("title"));
+    })
 });
