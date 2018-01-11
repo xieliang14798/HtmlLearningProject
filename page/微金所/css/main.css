@@ -206,6 +206,10 @@ fieldset[disabled] .btn-itcast.active {
     background-color: #fff;
     border-color: #f5f5f5;
     margin-bottom: 0;
+    /*吸顶效果之后fixed定位的位置*/
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .navbar-itcast .navbar-brand {
@@ -682,6 +686,106 @@ body {
 }
 
 /*新闻*/
+/*合作伙伴*/
+#partner {
+    padding: 50px 0;
+}
+
+#partner .partner-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+}
+
+#partner .partner-list > li {
+    width: calc(100% / 9);
+    font-size: 50px;
+    display: inline-block;
+    line-height: 1;
+}
+
+#partner .partner-list > li + li {
+    border-left: 1px dashed #c0c0c0;
+}
+
+#partner .partner-list > li > a {
+    text-decoration: none;
+    color: #999;
+}
+
+.icon-uniE930:hover {
+    color: #df3232 !important;
+}
+
+.icon-uniE930:before {
+    content: "\e946";
+}
+
+.icon-uniE92F:hover {
+    color: #e8380d !important;
+}
+
+.icon-uniE92F:before {
+    content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+    color: #ed6f00 !important;
+}
+
+.icon-uniE92E:before {
+    content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+    color: #159f69 !important;
+}
+
+.icon-uniE92A:before {
+    content: "\e92a";
+}
+
+.icon-uniE929:hover {
+    color: #07569e !important;
+}
+
+.icon-uniE929:before {
+    content: "\e929";
+}
+
+.icon-uniE931:hover {
+    color: #004098 !important;
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+.icon-uniE92C:hover {
+    color: #d32019 !important;
+}
+
+.icon-uniE92C:before {
+    content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+    color: #3eac4a !important;
+}
+
+.icon-uniE92B:before {
+    content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+    color: #2bb289 !important;
+}
+
+.icon-uniE92D:before {
+    content: "\e92d";
+}
+
+/*合作伙伴*/
 #footer {
     height: 200px;
 }

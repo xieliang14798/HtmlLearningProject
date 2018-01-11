@@ -34,4 +34,29 @@ $(function () {
         var $this = $(this);
         $newsTitle.text($this.data("title"));
     })
+    //轮播图滑动事件
+    var OFFSET = 50;
+    $(".carousel").each(function (index, item) {
+        var starX, endX;
+        item.addEventListener("touchstart", function (e) {
+            starX = e.touches[0].clientX;
+            e.preventDefault();
+        });
+        item.addEventListener("touchmove", function (e) {
+            endX = e.touches[0].clientX;
+            e.preventDefault();
+        });
+        item.addEventListener("touchend", function (e) {
+            var offsetX = endX - starX;
+            if (offsetX > OFFSET) {
+                //上一张
+                $(this).carousel("prev");
+            } else if (offsetX < -OFFSET) {
+                //下一张
+                $(this).carousel("next");
+            }
+            e.preventDefault();
+        })
+
+    })
 });
