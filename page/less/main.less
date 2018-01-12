@@ -1,0 +1,27 @@
+@mainColor: #0094ff;
+@height: 400px;
+
+.container {
+  background: @mainColor;
+  width: 400px;
+  height: @height;
+  display: flex;
+  border: 1px solid darken(@mainColor, 20%);
+  .margin_fun(100px);
+
+  p.box {
+    width: @height/2;
+    height: @height/2;
+    background: lighten(@mainColor, 20%);
+    .margin_fun();
+
+    &:hover {
+      background: lighten(@mainColor, 40%);
+    }
+
+  }
+}
+
+.margin_fun(@value:auto) {
+  margin: @value auto;
+}

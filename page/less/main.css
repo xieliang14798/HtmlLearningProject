@@ -1,0 +1,17 @@
+.container {
+  background: #0094ff;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  border: 1px solid #005999;
+  margin: 100px auto;
+}
+.container p.box {
+  width: 200px;
+  height: 200px;
+  background: #66bfff;
+  margin: auto auto;
+}
+.container p.box:hover {
+  background: #cceaff;
+}
