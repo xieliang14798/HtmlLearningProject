@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent; /*清除默认的点击的高亮效果*/
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Microsoft Yahei", sans-serif;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+input,
+textarea {
+    border: none;
+    resize: none;
+    outline: none; /*清除选中效果*/
+    -webkit-appearance: none; /*清除浏览器默认样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
