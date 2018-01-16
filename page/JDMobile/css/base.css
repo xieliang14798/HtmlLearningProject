@@ -40,3 +40,9 @@ textarea {
     visibility: hidden;
     clear: both;
 }
+
+[class^="icon_"],
+[class*=" icon_"] {
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}

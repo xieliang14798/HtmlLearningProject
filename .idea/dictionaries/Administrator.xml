@@ -12,6 +12,9 @@
       <w>navbar</w>
       <w>onreadystatechange</w>
       <w>topbar</w>
+      <w>touchend</w>
+      <w>touchmove</w>
+      <w>touchstart</w>
       <w>xmlhttp</w>
     </words>
   </dictionary>
