@@ -11,6 +11,7 @@
       <w>mouseout</w>
       <w>navbar</w>
       <w>onreadystatechange</w>
+      <w>safetip</w>
       <w>topbar</w>
       <w>touchend</w>
       <w>touchmove</w>

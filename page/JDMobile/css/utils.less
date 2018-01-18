@@ -1,0 +1,53 @@
+@border_color: #e0e0e0; //通用边框颜色
+
+.full_screen(@percent:100%) {
+  width: @percent;
+  height: @percent;
+}
+
+.full_width(@percent:100%) {
+  width: @percent;
+}
+
+.full_height(@percent: 100%) {
+  height: @percent;
+}
+
+.background(@color:#fff) {
+  background: @color;
+}
+
+.color(@color:#000) {
+  color: @color;
+}
+
+.absolute(@top:0,@left:0) {
+  position: absolute;
+  top: @top;
+  left: @left;
+}
+
+.absolute_right(@top:0,@right:0) {
+  position: absolute;
+  top: @top;
+  right: @right;
+}
+
+.border_top(@color:#000) {
+  border-top: 1px solid @color;
+}
+
+.border_right(@color:#000) {
+  border-right: 1px solid @color;
+}
+
+.border_bottom(@color:#000) {
+  border-bottom: 1px solid @color;
+}
+
+.border_left(@color:#000) {
+  border-left: 1px solid @color;
+}
+
+
+

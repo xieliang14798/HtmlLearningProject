@@ -1,0 +1,136 @@
+@import "utils";
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent; /*清除默认的点击的高亮效果*/
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft Yahei", sans-serif;
+  color: #333;
+  position: relative;
+  background: #f5f5f5;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea {
+  border: 0;
+  resize: none;
+  outline: none; /*清除选中效果*/
+  -webkit-appearance: none; /*清除浏览器默认样式*/
+}
+
+img {
+  vertical-align: middle; /*清除3px的bug*/
+  border: 0;
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.jd_layout {
+  min-width: 300px;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+[class^="icon_"],
+[class*=" icon_"] {
+  background: url("../images/sprites.png") no-repeat;
+  background-size: 200px 200px;
+}
+
+/*顶部导航栏 开始*/
+.jd_topBar {
+  .full_width();
+  height: 45px;
+  background: url(../images/header-bg.png) repeat-x;
+  background-size: 1px 44px;
+  .border_bottom(@border_color);
+  .absolute();
+  z-index: 1000;
+  .icon_back {
+    display: block;
+    width: 40px;
+    height: 44px;
+    background-position: -20px 0;
+    padding: 12px 10px;
+    background-clip: content-box;
+    background-origin: content-box;
+    .absolute();
+  }
+  .icon_menu {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: -60px 0;
+    margin: 12px 10px;
+    background-clip: content-box;
+    background-origin: content-box;
+    .absolute_right();
+  }
+  form {
+    .full_width();
+    height: 44px;
+    padding: 0 40px;
+    input {
+      .full_width();
+      height: 32px;
+      border: 1px solid #bfbfbf;
+      padding: 0 8px;
+      border-radius: 4px;
+      margin-top: 6px;
+      font-family: inherit;
+      font-size: 12px;
+    }
+  }
+  h2 {
+    .full_width();
+    height: 44px;
+    line-height: 42px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #000;
+    font-weight: inherit;
+    text-align: center;
+  }
+}
+
+/*顶部导航栏 结束*/
+/*复选框 开始*/
+.jd_check_box {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url("../images/shop-icon.png") no-repeat;
+  background-size: 50px 100px;
+  &.checked {
+    background-position: -25px 0;
+  }
+}
+
+/*复选框 结束*/
