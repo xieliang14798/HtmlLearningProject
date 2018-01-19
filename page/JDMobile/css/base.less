@@ -134,3 +134,61 @@ img {
 }
 
 /*复选框 结束*/
+/*数量输入、加减器 开始*/
+.changeNum {
+  float: left;
+  span {
+    display: block;
+    float: left;
+    height: 24px;
+    width: 32px;
+    border: 1px solid @border_color;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+    &.changeNum_left {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    &.changeNum_right {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+  input {
+    float: left;
+    width: 32px;
+    height: 24px;
+    .border_top(@border_color);
+    .border_bottom(@border_color);
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0;
+  }
+}
+
+/*数量输入、加减器 结束*/
+/*删除按钮 开始*/
+.deleteBox {
+  float: right;
+  margin-right: 5px;
+  .deleteBox_top {
+    display: block;
+    width: 20px;
+    height: 5px;
+    background: url("../images/delete_up.png");
+    background-size: 20px 5px;
+    margin-left: -1px;
+  }
+  .deleteBox_bot {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("../images/delete_down.png");
+    background-size: 18px 18px;
+    margin-top: -3px;
+  }
+}
+
+/*删除按钮 结束*/

@@ -124,40 +124,6 @@
             .price {
               margin-bottom: 8px;
             }
-            /*改变数量 开始*/
-            .changeNum {
-              float: left;
-              span {
-                display: block;
-                float: left;
-                height: 24px;
-                width: 32px;
-                border: 1px solid @border_color;
-                line-height: 24px;
-                text-align: center;
-                font-size: 14px;
-                &.changeNum_left {
-                  border-top-left-radius: 2px;
-                  border-bottom-left-radius: 2px;
-                }
-                &.changeNum_right {
-                  border-top-right-radius: 2px;
-                  border-bottom-right-radius: 2px;
-                }
-              }
-              input {
-                float: left;
-                width: 32px;
-                height: 24px;
-                .border_top(@border_color);
-                .border_bottom(@border_color);
-                line-height: 24px;
-                text-align: center;
-                font-size: 14px;
-                border-radius: 0;
-              }
-            }
-            /*改变数量 结束*/
           }
         }
       }
@@ -167,3 +133,115 @@
 }
 
 /*商品区域 结束*/
+
+/*底部操作栏 开始*/
+.jd_option {
+  .full_width();
+  height: 57px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  .option_check {
+    width: 60px;
+    height: 57px;
+    line-height: 57px;
+    .absolute();
+    .jd_check_box {
+      .absolute(20px, 10px);
+    }
+    .jd_check_label {
+      margin-left: 35px;
+      font-size: 12px;
+    }
+  }
+  .option_info {
+    .full_width();
+    .full_height();
+    padding: 0 117px 0 70px;
+    .amount {
+      font-size: 16px;
+      line-height: 32px;
+      span {
+        margin: 0 3px;
+      }
+    }
+    .amount_dec {
+      font-size: 10px;
+      opacity: 0.8;
+      span {
+        margin: 0 3px;
+      }
+    }
+  }
+  .option_submit {
+    width: 116px;
+    .full_height();
+    line-height: 57px;
+    .absolute_right();
+    background: #f15353;
+    text-align: center;
+    a {
+      .color(#fff);
+      font-size: 18px;
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/*底部操作栏 结束*/
+/*弹框 开始*/
+.jd_window {
+  .absolute();
+  .full_screen();
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.6);
+  .jd_window_box {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid @border_color;
+    border-radius: 4px;
+    .jd_window_info {
+      line-height: 74px;
+      .border_bottom(@border_color);
+      font-size: 16px;
+      color: #555;
+      text-align: center;
+      margin: 0 20px;
+    }
+    .jd_window_btn {
+      padding: 10px 20px;
+      .cancel {
+        display: block;
+        float: left;
+        width: 45%;
+        height: 36px;
+        line-height: 36px;
+        border: 1px solid @border_color;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 16px;
+      }
+      .submit {
+        display: block;
+        float: right;
+        width: 45%;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 16px;
+        background: #f15353;
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+/*弹框 结束*/
