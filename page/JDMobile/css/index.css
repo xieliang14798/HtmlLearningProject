@@ -16,7 +16,7 @@
   margin: 0 auto;
   height: 40px;
   position: relative;
-  background: rgba(201, 21, 35, 0.85);
+  background: rgba(201, 21, 35, 0);
 }
 .jd_header .jd_header_box .icon_logo {
   display: block;
