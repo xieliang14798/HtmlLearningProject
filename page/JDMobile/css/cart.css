@@ -202,6 +202,7 @@
 /*底部操作栏 结束*/
 /*弹框 开始*/
 .jd_window {
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
