@@ -2,5 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/page/面向对象/商城/scripts/basic.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/page/面向对象/商城/scripts/cart.js" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/page/面向对象/商城/scripts/index.js" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/page/面向对象/商城/scripts/product.js" charset="GB2312" />
   </component>
 </project>
