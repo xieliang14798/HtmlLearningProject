@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function fn() {
+            this.name = '';
+            this.price = 0;
+            this.version = '';
+            Object.defineProperty(this, 'name', {
+                get: function () {
+                    return name;
+                },
+                set: function (value) {
+                    name = value;
+                }
+            });
+            Object.defineProperty(this, 'price', {
+                get: function () {
+                    return price * 0.8;
+                },
+                set: function (value) {
+                    if (value > 1000) {
+                        alert('价格必须在0-1000之间');
+                    } else {
+                        price = value;
+                    }
+                }
+            });
+            Object.defineProperty(this, 'version', {
+                value: '1.0',
+                writable: false
+            })
+        }
+
+        var fn = new fn();
+        fn.price = 300;
+        console.log(fn.price);
+        fn.price = 2000;
+        console.log(fn.price);
+        console.log(fn.version);
+        fn.version = '2.0';
+        console.log(fn.version);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

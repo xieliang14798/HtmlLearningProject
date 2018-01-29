@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function fn1() {
+            this.name = "zhangsan";
+        }
+
+        console.log(new fn1().name);//zhangsan
+
+        function fn4() {
+            this.name = "zhangsan";
+            return 'lisi';
+        }
+
+        console.log(new fn4().name);//zhangsan
+
+        function fn2() {
+            this.name = "zhangsan";
+            return {'name': 'lisi'};
+        }
+
+        console.log(new fn2().name);//lisi
+
+        function fn3() {
+            this.name = "zhangsan";
+            return {'age': 19};
+        }
+
+        console.log(new fn3().name);//undefined
+    </script>
+</head>
+<body>
+
+</body>
+</html>
