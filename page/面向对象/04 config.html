@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="itemInfo">
+    <div id="name">
+        <h1 id='pname'></h1>
+        <div id="pdes"></div>
+        <div >已售：<strong id="psales"></strong></div>
+        <div>原价：<strong id='pprice'></strong>元</div>
+        <div>优惠价：<strong id='pyouhui'></strong>元</div>
+        <div>折扣：<strong id='pzhekou'></strong>折</div>
+        <div>生产日期：<strong id='date'></strong></div>
+    </div>
+</div>
+<button id='btn'>加入购物车</button>
+
+</body>
+</html>
+
+<script>
+    function Product() {
+        this.name = '';
+        this.description='';
+        this.salesCount='';
+        this.originalPrice='';
+        this.price='';
+        this.discount='';
+        this.produceDate='';
+
+
+        this.config={
+            $pname: document.getElementById('pname'),
+            $pdes: document.getElementById('pdes'),
+            $psales: document.getElementById('psales'),
+            $pprice :  document.getElementById('pprice'),
+            $pyouhui :  document.getElementById('pyouhui'),
+            $pzhekou :  document.getElementById('pzhekou'),
+            $youhuijia :  document.getElementById('pyouhui'),
+            $zhekou :  document.getElementById('pzhekou'),
+            $date :  document.getElementById('date'),
+            $btn:document.getElementById("btn")
+        }
+        var active = this;
+        //私有属性
+        var bindDom=function () {
+            active.config.$pname.innerHTML=active.name;
+            active.config.$pdes.innerHTML=active.description;
+            active.config.$psales.innerHTML=active.salesCount;
+            active.config.$pprice.innerHTML=active.originalPrice;
+            active.config.$pyouhui.innerHTML=active.price;
+            active.config.$pzhekou.innerHTML=active.discount;
+            active.config.$date.innerHTML=active.produceDate;
+
+        }
+        function bindEvent() {
+            active.config.$btn.onclick=function () {
+                alert('133');
+            }
+        }
+        this.init = function () {
+            bindDom();
+            bindEvent();
+        }
+    }
+    //prototype里的公有属性，可以外部调用
+    Product.prototype={
+        fn1:function () {
+
+        },
+        fn2:function () {
+
+        }
+    }
+
+    window.onload=function() {
+        var iphone = new Product()
+        iphone.name='iphone7';
+        iphone.description='手机中的战斗机';
+        iphone.salesCount='40000';
+        iphone.originalPrice='6888';
+        iphone.price='3000';
+        iphone.discount='3.0';
+        iphone.produceDate=new Date();
+        console.log(iphone.bindDom);//私有属性无法调用
+        iphone.init();
+    }
+</script>
+
