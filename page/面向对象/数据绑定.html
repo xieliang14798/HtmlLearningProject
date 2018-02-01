@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    window.onload = function () {
+        var isLogin = true;
+        if (isLogin) {
+            login();
+        } else {
+            unlogin();
+        }
+    }
+
+    function login() {
+        var user = {name: "唐嫣"};
+        document.write(formateString("欢迎@(name)来到百度世界", user))
+    }
+
+    function unlogin() {
+
+    }
+
+    function formateString(str, data) {
+        return str.replace(/@\((\w+)\)/g, function (match, key) {
+            return typeof data[key] == 'undefined' ? "" : data[key];
+        })
+    }
+</script>
+</body>
+</html>

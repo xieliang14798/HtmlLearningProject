@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var fun = function () {
+            this.age = 30;
+        };
+        fun.prototype = {
+            age: 12,
+            info: {
+                name: 'zhangsan',
+                age: 12
+            }
+        };
+        var a = new fun();
+        var b = new fun();
+        console.log(a.info.name);//zhangsan
+        console.log(b.info.name);//zhangsan
+        a.info.name = "lizi";
+        b.info.name = "郑爽";
+        //info是原型里的属性(我理解成和Java父类一样)，所有实例共享一个内存空间，一个实例修改了，
+        //其他的实例引用的值也跟着变了
+        console.log(a.info.name);//郑爽
+        console.log(b.info.name);//郑爽
+
+        console.log(a.age);//30
+        console.log(fun.prototype.age);//12
+        delete a.age;
+        console.log(a.age);//12
+    </script>
+</head>
+<body>
+
+</body>
+</html>
