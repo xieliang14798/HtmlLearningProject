@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            height: 40px;
+            margin-top: 20px;
+            text-align: center;
+            font: 400 22px/40px "microsoft yahei";
+        }
+
+        ul {
+            width: 1000px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        ul li {
+            width: 270px;
+            height: 270px;
+            border-radius: 4px;
+            margin: 20px 0;
+            background: yellowgreen;
+        }
+
+        ul li:hover {
+            background: #86cd7c;
+        }
+
+        ul li p.actor {
+            font-size: 20px;
+            line-height: 270px;
+            text-align: center;
+            color: black;
+        }
+
+        ul li p.film {
+            font-size: 17px;
+            text-align: center;
+        }
+    </style>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <script src="../../js/template-web.js"></script>
+    <script type="text/html" id="model">
+        <h2>{{name}}</h2>
+        <ul>
+            {{each films}}
+            <li>
+                <p class="actor">{{$value.actor}}</p>
+                <p class="film">{{$value.film}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            var data = {
+                name: '电影推荐',
+                films:
+                    [
+                        {
+                            actor: '郑爽',
+                            film: '悟空传',
+                        }, {
+                        actor: '唐嫣',
+                        film: '大话西游3',
+                    }, {
+                        actor: '杨幂',
+                        film: '三生三世十里桃花',
+                    }, {
+                        actor: '刘亦菲',
+                        film: '三生三世十里桃花',
+                    }, {
+                        actor: '范冰冰',
+                        film: '十月围城',
+                    }, {
+                        actor: '郑爽',
+                        film: '悟空传',
+                    }, {
+                        actor: '郑爽',
+                        film: '悟空传',
+                    }, {
+                        actor: '郑爽',
+                        film: '悟空传',
+                    }, {
+                        actor: '郑爽',
+                        film: '悟空传',
+                    }
+
+                    ]
+            }
+            var html = template("model", data);
+            $(".box").html(html);
+        })
+    </script>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
