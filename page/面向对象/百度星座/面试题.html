@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var a = {n: 1};
+        var b = a;
+        a.x = a = {n: 2};
+        console.log(a.x);//undefined
+        console.log(b.x);//{n: 2}
+        console.log(a);//{n: 2}
+        console.log(b);//{n: 1, x:{n: 2}}
+        //js的赋值运算顺序永远都是从右往左的，不过由于“.”是优先级最高的运算符，所以这行代码先“计算”了a.x。
+    </script>
+</head>
+<body>
+
+</body>
+</html>

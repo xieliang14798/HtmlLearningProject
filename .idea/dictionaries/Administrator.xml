@@ -8,6 +8,7 @@
       <w>jsonp</w>
       <w>mobilephone</w>
       <w>mouseenter</w>
+      <w>mouseleave</w>
       <w>mouseout</w>
       <w>navbar</w>
       <w>onreadystatechange</w>
