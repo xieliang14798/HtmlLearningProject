@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function createPerson(name) {
+            var obj = new Object();
+            obj.name = name;
+            obj.HP = 100;
+            obj.MP = 100;
+            obj.technologys = ['普通攻击', '横扫千军', '地狱火', '漫天飞雪'];
+            obj.attach = function (num) {
+                console.log(obj.name + '释放技能' + obj.technologys[num]);
+            };
+            obj.run = function () {
+
+            };
+            return obj;
+        }
+
+        var person = createPerson("苏雪巧");
+        person.attach(3);
+        var person2 = createPerson("令狐月霜");
+        person2.attach(1);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
