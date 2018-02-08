@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/utils.js"></script>
+    <script type="text/javascript">
+        var obj = new Object();
+        obj.name = '苏雪巧';
+        obj.HP = 100;
+        obj.MP = 100;
+        obj.technologys = ['普通攻击', '横扫千军', '地狱火', '漫天飞雪'];
+        obj.attach = function (num) {
+            console.log(obj.name + '释放技能' + obj.technologys[num]);
+        };
+        var extend = $$.extend({}, obj);
+        console.log(extend['name']);
+        extend.attach(3);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
