@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var arr = {
+            0: '孙瑞红',
+            1: '郑爽',
+            2: '陈乔恩',
+            length: 3
+        };
+        //        arr.push('11'); 伪数组无法push
+        console.log(arr);
+        console.log(arr[0]);
+        var arr2 = Array.prototype.slice.call(arr);
+        arr2.push("唐嫣");//转化之后真数组可以push
+        console.log(arr2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

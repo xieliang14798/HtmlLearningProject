@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+<div id="text">我是文本div</div>
+
+</body>
+<script type="text/javascript">
+    var innerHTML = "window";
+
+    function fn() {
+        console.log(this.innerHTML);
+    }
+
+    fn();
+    fn.call(document.getElementById('text'));// 通过call将this从window修改成div
+</script>
+</html>

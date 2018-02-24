@@ -107,8 +107,10 @@ a.boxclose{
 	width:45px;
 	height:45px;
 	display:inline-block;
+	background: url(../images/image-sprite.png) no-repeat -8px -369px;
 }
 .boxclose span:hover{
+	background: url(../images/image-sprite.png) no-repeat -6px -308px;
 }
 /* start icon styles */
 .header-bottom-right {

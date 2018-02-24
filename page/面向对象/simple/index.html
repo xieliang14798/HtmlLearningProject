@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="simple.js"></script>
+    <script type="text/javascript">
+        var Person = Class.extend({
+            init: function (name, age) {
+                this.name = name;
+                this.age = age;
+            },
+            say: function () {
+                alert(this.name + this.age + "岁");
+            }
+        });
+        var Student = Person.extend({
+           init:function (name, age, fav) {
+               this._super(name,age);
+               this.fav = fav;
+           },
+           say:function () {
+               this._super();
+               alert(this.name + this.age + "岁喜欢" + this.fav);
+           }
+        });
+        var student = new Student("孙瑞红", '25', '唱歌');
+        student.say();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

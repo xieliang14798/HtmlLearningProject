@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var myclass = {
+        print: function () {
+            return this.getDetail().name + this.age + this.getDetail().aihao;
+        }
+    };
+    var student = {
+        getDetail: function () {
+            return {name: '张三', aihao: '唱歌跳舞'}
+        },
+        age: 12
+    };
+    console.log(myclass.print.call(student));
+</script>
+
+
+</body>
+</html>
