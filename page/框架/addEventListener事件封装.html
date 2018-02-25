@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            background: cadetblue;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box"></div>
+<script type="text/javascript">
+    on('box','click',function () {
+        this.style.background='red';
+    });
+    function  on(id,type,fn) {
+        var dom = document.getElementById(id);
+        if(dom.addEventListener){
+            return dom.addEventListener(type,fn,false);
+        }else {
+            dom.attachEvent('on'+type,fn);
+        }
+
+    }
+</script>
+</body>
+</html>
