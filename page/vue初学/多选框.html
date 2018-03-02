@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <input type="checkbox" id="srh" value="孙瑞红" v-model="checkedNames">
+    <label for="srh">孙瑞红</label>
+    <input type="checkbox" id="zs" value="郑爽1" v-model="checkedNames">
+    <label for="zs">郑爽</label>
+    <input type="checkbox" id="ty" value="唐嫣1" v-model="checkedNames">
+    <label for="ty">唐嫣</label>
+    <p>选中人物: {{ checkedNames }}</p>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el: '#app',
+        data: {
+            checkedNames: []
+        }
+    })
+</script>
+</body>
+</html>

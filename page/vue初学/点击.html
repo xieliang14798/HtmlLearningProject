@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body>
+<div id="app">
+    <button @click="count+=1">点击</button>
+    <button @click="say($event)">我是按钮</button>
+    <p>按钮已经被点击了 {{count}} 次</p>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el: '#app',
+        data: {
+            count: 0
+        },
+        methods:{
+            say:function (event) {
+                alert(event.target.innerHTML);
+            }
+        }
+    })
+</script>
+</body>
+</html>

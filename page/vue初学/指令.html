@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style type="text/css">
+        #app {
+            width: 600px;
+            margin: 100px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p>{{content}}</p>
+    <p @click="onClick">{{content}}</p>
+    <a :herf="url">{{content}}</a>
+</div>
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            content: '我很想爱她，但是眼睛在说谎 !',
+            url: 'www.baidu.com'
+        },
+        methods: {
+            onClick: function () {
+                alert(this.content);
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

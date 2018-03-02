@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #todo-list {
+            width: 1000px;
+            margin: 100px auto;
+        }
+
+    </style>
+</head>
+<body>
+<div id="todo-list">
+    <ul>
+        <li is="todo-item"
+            v-for="(todo, index) in todos"
+            :key="todo.id"
+            :tiaomu="todo"
+        ></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    //    Vue.component('todo-item', {
+    //        props: ['tiaomu'],
+    //        template: '<li>{{tiaomu.value}}</li>'
+    //    });
+    new Vue({
+        el: '#todo-list',
+        data: {
+            todos: [
+                {
+                    id: '0',
+                    value: '孙瑞红'
+                },
+                {
+                    id: '1',
+                    value: '郑爽'
+                },
+                {
+                    id: '2',
+                    value: '唐嫣'
+                },
+                {
+                    id: '3',
+                    value: '陈乔恩'
+                }
+            ]
+
+        },
+        components: {
+            'todo-item': {
+                props: ['tiaomu'],
+                template: '<li>{{tiaomu.value}}----{{tiaomu.id}}</li>'
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

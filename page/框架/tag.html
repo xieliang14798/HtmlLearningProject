@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            width: 800px;
+            margin: 100px auto;
+        }
+
+        ul li {
+            width: 100%;
+            height: 50px;
+            background: goldenrod;
+            border-bottom: 1px solid white;
+        }
+    </style>
+    <script src="Tool.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var lis = T.$tag('li', document.getElementById('container2'));
+            console.log(lis);
+            for (var i = 0; i < lis.length; i++) {
+                T.hover(lis[i], function () {
+                    this.style.background = 'palegoldenrod';
+                }, function () {
+                    this.style.background = 'goldenrod';
+                })
+            }
+        }
+    </script>
+
+</head>
+<body>
+<ul id="container">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<ul id="container2">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

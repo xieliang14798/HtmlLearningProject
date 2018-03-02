@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <my-header></my-header>
+    <p>{{content}}</p>
+    <my-footer></my-footer>
+</div>
+
+<script type="text/javascript">
+    var myTitle = {
+        template: '<span> 我是标题</span>'
+    };
+    var myHead = {
+        template: "<p>我是header<my-title></my-title></p>",
+        components: {
+            'my-title': myTitle
+        }
+    };
+    Vue.component('my-footer', {
+        template: '<p>我是footer</p>'
+    });
+    new Vue({
+        el: '#app',
+        data: {
+            content: '我很想爱她，但是眼睛在说谎！'
+        },
+        components: {
+            'my-header': myHead
+        }
+    })
+</script>
+</body>
+</html>

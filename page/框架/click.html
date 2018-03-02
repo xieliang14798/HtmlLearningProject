@@ -21,18 +21,9 @@
 <body>
 <div class="box" id="box"></div>
 <script type="text/javascript">
-    T.on('box', 'click', function () {
-        this.style.background = 'red';
+    T.click('box', function () {
+        this.style.background = 'green';
     });
-    /*  function  on(id,type,fn) {
-          var dom = document.getElementById(id);
-          if(dom.addEventListener){
-              return dom.addEventListener(type,fn,false);
-          }else {
-              dom.attachEvent('on'+type,fn);
-          }
-
-      }*/
 </script>
 </body>
 </html>

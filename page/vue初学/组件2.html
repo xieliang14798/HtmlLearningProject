@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <ol>
+        <list-item
+                v-for="item in itemList"
+                v-bind:item="item"
+                v-bind:key="item.id"></list-item>
+    </ol>
+</div>
+<script type="text/javascript">
+    Vue.component('list-item', {
+        props: ['item'],
+        template: '<li>{{item.text}}</li>'
+    });
+    new Vue({
+        el: '#app',
+        data: {
+            itemList: [
+                {id: 0, text: '孙瑞红'},
+                {id: 1, text: '郑爽'},
+                {id: 2, text: '唐嫣'},
+                {id: 3, text: '陈乔恩'},
+                {id: 4, text: '张雪迎'}
+            ]
+        }
+    })
+
+</script>
+</body>
+</html>
