@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #app,#app2,#app3{
+            width: 600px;
+            height: 200px;
+            margin: 100px auto;
+        }
+        .a{
+            border: 1px solid red;
+        }
+        .b{
+            background: goldenrod;
+        }
+    </style>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+<div id="app" :class="s">
+
+</div>
+<div id="app2" :class="{a:a,b:b}"></div>
+<div id="app3" :class="[a,b]"></div>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            s:{
+                a:true,
+                b:true
+            }
+        }
+    })
+    new Vue({
+        el:'#app2',
+        data:{
+            a:true,
+            b:true
+        }
+    })
+    new Vue({
+        el:'#app3',
+        data:{
+            a:'a',
+            b:'b'
+        }
+    })
+</script>
+</body>
+</html>

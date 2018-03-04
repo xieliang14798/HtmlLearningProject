@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>延迟过滤器</title>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" @keydown="show()|debounce 2000"><!--延迟2000毫秒-->
+</div>
+<script>
+    new Vue({
+        el:'#app',
+        methods:{
+            show:function () {
+                alert(123);
+            }
+        }
+    })
+</script>
+</body>
+</html>

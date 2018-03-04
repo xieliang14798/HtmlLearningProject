@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/vue.js"></script>
+</head>
+<body style="background: darkgrey">
+    <img v-bind:src="url" v-bind:alt="title" :width="w" :style="style">
+
+<script>
+    new Vue({
+        el:'body',
+        data:{
+            url:'../image/zs.png',
+            title:'郑爽I LOVE YOU',
+            w:'500px',
+            style:{
+                display: 'block',
+                margin: '100px auto'
+            }
+        }
+    })
+</script>
+</body>
+</html>

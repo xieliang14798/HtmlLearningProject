@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p v-text="obj.name+'--'+obj.age"></p>
+</div>
+<script>
+   var vm =  new Vue({
+        el:'#app',
+        data:{
+            obj:{name:'孙瑞鸿',age:24}
+        }
+    })
+    vm.$watch('obj',function (newValue, oldValue) {
+        console.log('newValue'+'--'+JSON.stringify(newValue));
+        console.log('oldValue'+'--'+JSON.stringify(oldValue));
+    },{deep:true})/*监听对象需要加上{deep:true}*/
+</script>
+</body>
+</html>

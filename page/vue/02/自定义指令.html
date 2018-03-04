@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义指令</title>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p v-color="'red'">{{msg}}</p>
+    <p v-color="'orange'">{{msg}}</p>
+    <p v-color="'yellow'">{{msg}}</p>
+    <p v-color="'green'">{{msg}}</p>
+    <p v-color="'cyan'">{{msg}}</p>
+    <p v-color="'blue'">{{msg}}</p>
+    <p v-color="'purple'">{{msg}}</p>
+</div>
+<script>
+    Vue.directive('color',function (c) {
+        this.el.style.color=c;
+    })
+    new Vue({
+        el:'#app',
+        data:{
+            msg:'自定义指令'
+        }
+    })
+</script>
+</body>
+</html>

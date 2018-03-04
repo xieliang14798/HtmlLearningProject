@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义键盘信息</title>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" @keydown.a="show($event)">
+    <input type="text" @keydown.ctrl="show($event)"><!--原本不存在ctrl指令的，通过自定义指令将他绑定-->
+</div>
+<script>
+    Vue.directive('on').keyCodes.ctrl = 17;
+    new Vue({
+        el:'#app',
+        methods:{
+            show:function (ev) {
+                alert(ev.keyCode);
+            }
+        }
+    })
+</script>
+</body>
+</html>
