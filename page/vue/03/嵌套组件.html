@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套组件</title>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+<template id="parent">
+    <h2>我是父组件
+        <child></child>
+    </h2>
+</template>
+<template id="child">
+    <h4>我是子组件</h4>
+</template>
+<div id="app">
+    <parent></parent>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        components: {
+            parent: {
+                template: '#parent',
+                components: {
+                    child: {
+                        template: '#child'
+                    }
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

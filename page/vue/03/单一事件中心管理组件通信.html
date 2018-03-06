@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/vue2.js"></script>
+</head>
+<body>
+<template id="titlea">
+    <div>
+        <h3>我是A组件
+            <button @click="send">把A数据传递给C</button>
+        </h3>
+    </div>
+</template>
+<template id="titleb">
+    <div>
+        <h3>我是B组件
+            <button @click="send">把B数据传递给C</button>
+        </h3>
+    </div>
+</template>
+<template id="titlec">
+    <div>
+        <h3>我是C组件</h3>
+        <span>接收过来的A的数据为: {{a}}</span>
+        <br>
+        <span>接收过来的B的数据为: {{b}}</span>
+    </div>
+</template>
+<div id="app">
+    <item-a></item-a>
+    <item-b></item-b>
+    <item-c></item-c>
+</div>
+<script>
+    var vm = new Vue();
+    var titlea = {
+        template: '#titlea',
+        data: function () {
+            return {a: "我是组件A的数据"};
+        },
+        methods: {
+            send: function () {
+                vm.$emit('a-msg', this.a);
+
+            }
+        }
+    }
+    var titleb = {
+        template: '#titleb',
+        data: function () {
+            return {b: "我是组件B的数据"};
+        },
+        methods: {
+            send: function () {
+                vm.$emit('b-msg', this.b)
+            }
+        }
+    }
+    var titlec = {
+        template: '#titlec',
+        data: function () {
+            return {
+                a: '',
+                b: ''
+            }
+        },
+        mounted: function () {
+            vm.$on('a-msg', function (a) {
+                this.a = a;
+            }.bind(this));
+            vm.$on('b-msg', function (b) {
+                this.b = b;
+            }.bind(this));
+        }
+    }
+    new Vue({
+        el: '#app',
+        components: {
+            'item-a': titlea,
+            'item-b': titleb,
+            'item-c': titlec
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路由</title>
+    <script src="../lib/vue.js"></script>
+    <script src="../lib/vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <a v-link="{path:'/home'}">主页</a>
+    <a v-link="{path:'/news'}">新闻</a>
+    <router-view></router-view>
+</div>
+<script>
+    var app = Vue.extend();
+    var home = {
+        template: '<h3>我是主页</h3>'
+    }
+    var news = {
+        template: '<h3>我是新闻</h3>'
+    }
+    var router = new VueRouter();
+    router.map({
+        'home': {
+            component: home
+        },
+        'news': {
+            component: news
+        }
+    })
+    router.start(app, "#app");
+    router.redirect({
+        '/': '/home'
+    })
+</script>
+
+</body>
+</html>
