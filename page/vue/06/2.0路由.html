@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/vue2.js"></script>
+    <script src="../lib/vue-router2.js"></script>
+    <style type="text/css">
+        #app {
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            border: 1px solid grey;
+            padding: 20px;
+        }
+
+        .router-link-active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<template id="userdetail">
+    <div>
+        <h4>我是用户信息详情页</h4>
+        <p>{{$route.params}}</p>
+    </div>
+</template>
+<template id="user">
+    <div>
+        <h3>我是用户信息页</h3>
+        <ul>
+            <li>
+                <router-link :to="srh">孙瑞红</router-link>
+            </li>
+            <li>
+                <router-link :to="zs">郑爽</router-link>
+            </li>
+            <li>
+                <router-link :to="cqe">陈乔恩</router-link>
+            </li>
+        </ul>
+        <div>
+            <router-view>
+
+            </router-view>
+        </div>
+    </div>
+</template>
+<div id="app">
+    <div>
+        <router-link to="/home">主页</router-link>
+        <router-link to="/user">用户</router-link>
+    </div>
+    <div>
+        <router-view></router-view>
+    </div>
+</div>
+<script>
+    var home = {
+        template: '<h3>我是主页</h3>'
+    };
+    var user = {
+        template: '#user',
+        data: function () {
+            return {
+                srh: encodeURI('/user/孙瑞红/24'),
+                zs: encodeURI('/user/郑爽/26'),
+                cqe: encodeURI('/user/陈乔恩/36')
+            }
+        }
+    };
+    const routes = [
+        {
+            path: '/home',
+            component: home
+        },
+        {
+            path: '/user',
+            component: user,
+            children: [
+                {
+                    path: ':username/:age',
+                    component: {
+                        template: '#userdetail'
+                    }
+                }
+            ]
+        },
+        {
+            path: '*',
+            redirect: '/home'/*404*/
+        }
+    ]
+    const router = new VueRouter({
+        routes: routes
+    });
+    new Vue({
+        el: '#app',
+        router: router
+    })
+</script>
+</body>
+</html>
